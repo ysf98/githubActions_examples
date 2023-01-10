@@ -1,4 +1,9 @@
 {
+{
+  "files": ["*.spec.js", "**/*.test.ts", "**/*.spec.ts"],
+  "env": {
+    "jest": true
+  },
   "extends": "standard",
   "rules": {
     "semi": [2, "always"],
