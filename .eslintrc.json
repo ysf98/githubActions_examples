@@ -1,7 +1,7 @@
 {
   "extends": "standard",
   "rules": {
-    "test": "int",
+    "test": " ",
     "semi": [2, "always"],
     "quotes": ["error", "double"]
   }
