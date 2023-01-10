@@ -1,6 +1,6 @@
 {
 {
-  "files": ["*.spec.js", "**/*.test.ts", "**/*.spec.ts"],
+  "files": ["*.sum.test.js"],
   "env": {
     "jest": true
   },
