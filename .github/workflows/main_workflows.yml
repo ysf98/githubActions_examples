@@ -2,19 +2,22 @@ name: main_workflow
 on: 
  push: 
   branches:
-    - nodejs_jest_job
+    - nodejs_environment_job
 
 jobs:
   job1:
    name: Linter execution
    runs-on: ubuntu-latest
+   strategy:
+     matrix: 
+       node: [10, 12]
    steps:
    - name: Checkout Code
      uses: actions/checkout@v3
    - name: Setting node version
      uses: actions/setup-node@v2
      with: 
-       node-version: [10,12]
+       node-version: ${{ matrix.node }}
    - name: Linter execution
      uses: github/super-linter@v4
      env:
@@ -33,3 +36,13 @@ jobs:
      run: |
        npm install jest
        npm test
+  job3:
+   name: environment_test_execution
+   runs-on: ubuntu-latest
+   steps:
+     uses: adeloyedeji/github-actions-hello@v1.0
+     with: 
+       who-to-greet: ${{ env.DESTINATION_PERSON }} 
+     env: 
+       DESTINATION_PERSON: 2DAW
+
