@@ -2,7 +2,7 @@
   "extends": "standard",
   "env": {
   "jest": true
-  }
+  },
   "rules": {
     "semi": [2, "always"],
     "quotes": ["error", "double"]
