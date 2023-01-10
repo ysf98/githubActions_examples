@@ -2,8 +2,10 @@
   "dependencies": {
     "node": "^19.3.0"
   }
+  {
   "scripts": {
     "test": "jest"
+  }
   }
 }
   
