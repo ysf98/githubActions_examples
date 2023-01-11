@@ -13,6 +13,7 @@ jobs:
       
     - name: Run Statics
       run: |
+       cd react-app
        npm install
        npm run build
 
