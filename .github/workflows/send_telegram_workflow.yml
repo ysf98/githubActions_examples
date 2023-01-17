@@ -9,7 +9,7 @@ jobs:
     name: envio_mensaje
     steps:
       - name: Checkout
-        uses: actions/chechkout@3
+        uses: actions/checkout@3
       - name: Telegram
         uses: ./
         env:
