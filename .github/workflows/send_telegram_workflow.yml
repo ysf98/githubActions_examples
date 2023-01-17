@@ -5,7 +5,7 @@ on:
       - send_telegram_action
 jobs:
   envio_mensaje:
-    runs_on: ubuntu latest
+    runs-on: ubuntu latest
     name: envio_mensaje
     steps:
       - name: Checkout
