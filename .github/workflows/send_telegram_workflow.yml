@@ -14,7 +14,6 @@ jobs:
         uses: ./
         env:
           DEFAULT_BRANCH: send_telegram_action
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Output
-        run: echo "the time is ${{steps.hello.outputs.time}} 
+        run: echo "hola " 
       
