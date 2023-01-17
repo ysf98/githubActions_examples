@@ -5,7 +5,7 @@ on:
       - send_telegram_action
 jobs:
   job1:
-    runs-on: self-hosted
+    runs-on: ubuntu_latest
     name: envio_mensaje
     steps:
       - name: Checkout
