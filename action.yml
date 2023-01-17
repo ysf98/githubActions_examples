@@ -1,12 +1,7 @@
 name: 'Telegram'
 description: 'Bot de telegram'
 inputs:
-  description: 'Who to greet'
-  required: true
-  default: 'World'
 outputs:
-  time:
-  description: 'time'
 runs:
   using: 'node12'
   main: 'index.js'
