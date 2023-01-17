@@ -27,6 +27,5 @@ bot.on('message', (msg) => {
 
   // send a message to the chat acknowledging receipt of their message
   bot.sendMessage(chatId, 'Workflow ejecutado correctamente tras el último commit. Saludos ' + msg.from.frist_name);
-});
   bot.sendMessage(chatId, 'Mensaje enviado');
 });
