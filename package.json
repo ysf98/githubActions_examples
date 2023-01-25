@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ysf98/githubActions_examples#readme",
   "dependencies": {
+    "node": "^19.4.0",
     "node-telegram-bot-api": "^0.61.0"
   }
 }
