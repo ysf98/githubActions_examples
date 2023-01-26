@@ -1,5 +1,0 @@
-name: 'Telegram'
-description: 'Bot de telegram'
-runs:
-  using: 'node16'
-  main: 'index.js'
