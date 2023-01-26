@@ -20,4 +20,3 @@ jobs:
           DEFAULT_BRANCH: send_telegram_action
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID  }}
-          TELEGRAM_NAME: ${{ secrets.TELEGRAM_NAME  }}
