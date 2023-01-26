@@ -12,7 +12,7 @@ bot.onText(/\/echo (.+)/, (msg, match) => {
   // 'match' is the result of executing the regexp above on the text content
   // of the message
 
-  const chatId = msg.chat.id;
+  const chatId = (process.env.TELEGRAM_CHAT_ID);
   const resp = match[1]; // the captured "whatever"
 
   // send back the matched "whatever" to the chat
