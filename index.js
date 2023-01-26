@@ -16,4 +16,11 @@ const main = async () => {
   console.log(mensaje);
 }
 
+bot.on('message', (msg) => {
+  const chatId = msg.chat.id;
+
+  // send a message to the chat acknowledging receipt of their message
+  bot.sendMessage(chatId, 'Mensaje enviado');
+});
+
 main();
