@@ -7,7 +7,7 @@ const telegram = require('node-telegram-bot-api')
 const bot = new telegram(process.env.TELEGRAM_TOKEN)
 
 const texto = async () => {
-  return "Workflow ejecutado correctamente tras el último commit. Saludos ";
+  return "Workflow ejecutado correctamente tras el último commit. Saludos " + process.env.TELEGRAM_NAME;
 }
 
 const main = async () => {
