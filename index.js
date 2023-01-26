@@ -13,7 +13,8 @@ const main = async () => {
   const mensaje = await texto();
   bot.sendMessage(process.env.TELEGRAM_CHAT_ID, mensaje);
   console.log(mensaje);
-  console.log("mensaje enviado");
+  bot.sendMessage(process.env.TELEGRAM_CHAT_ID, "Mensaje enviado");
+  
 }
 
 main();
